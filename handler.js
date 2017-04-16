@@ -15,14 +15,14 @@ module.exports.getDictionaryWords = (event, context, callback) => {
   let params = {};
   if (event.queryStringParameters) {
     params = {
-      inputString: event.queryStringParameters.letters || 'abcde',
+      inputString: event.queryStringParameters.letters.toLowerCase() || 'abcde',
       mandLetter: event.queryStringParameters.mand || 'd',
       minWordLength: event.queryStringParameters.length || 4
     }
   } else {
     params = {
-      inputString: 'abcdefg',
-      mandLetter: 'd',
+      inputString: 'Realapp'.toLowerCase(),
+      mandLetter: 'p',
       minWordLength: 4
     }
   }
