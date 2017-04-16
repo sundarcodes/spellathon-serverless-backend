@@ -1,0 +1,15 @@
+{
+  "name": "spellathon-serverless",
+  "version": "1.0.0",
+  "description": "lambda for finding dictionary words",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sundar",
+  "license": "ISC",
+  "dependencies": {
+    "js-combinatorics": "^0.5.2",
+    "ramda": "^0.23.0"
+  }
+}
